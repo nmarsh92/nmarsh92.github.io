@@ -1,0 +1,158 @@
+/*#region Variables*/
+:root {
+  --primary-color: #6c757d;
+  --secondary-color: #ffffffe8;
+  --accent-color: #b4bec7;
+}
+/*#endregion*/
+
+/*#region Global*/
+body {
+  background-color: var(--primary-color);
+  font-size: larger;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  flex-basis: 100%;
+  height: 100%;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--secondary-color);
+  border-radius: 0.5em;
+  padding: 1em;
+  margin: 1em;
+  max-width: 100%;
+}
+/*#endregion*/
+
+/*#region Profile*/
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1em;
+}
+
+.profile-image {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  max-width: 300px;
+}
+
+.profile-social {
+  display: inline-flex;
+}
+
+.profile-social-item a img {
+  margin: 0.5em;
+  width: 30px;
+  height: 30px;
+}
+
+.profile-content {
+  display: flex;
+  margin-left: -1em;
+  width: 95%;
+}
+
+.profile-info {
+  width: 100%;
+}
+
+.profile-info li {
+  padding: 0.75em;
+  border-bottom: 1px solid var(--accent-color);
+  width: 100%;
+}
+
+.profile-info li:last-child {
+  border-bottom: none;
+}
+/*#endregion*/
+
+/*#region Content*/
+.content {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 1em;
+  width: 100%;
+  flex-basis: 45%;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1em;
+  width: 100%;
+}
+.content ul {
+  width: 100%;
+}
+
+.content li {
+  padding: 0.75em;
+  border-bottom: 1px solid var(--accent-color);
+  width: 100%;
+}
+/*#endregion*/
+
+/*#region Desktop*/
+@media (min-width: 992px) {
+  body {
+    font-size: larger;
+  }
+  .container {
+    flex-direction: row;
+  }
+
+  .profile {
+    flex-basis: 25%;
+    max-width: 476px;
+  }
+
+  .content {
+    flex-basis: 70%;
+  }
+
+  .column {
+    flex-basis: calc(100% / 3 - 2em);
+  }
+}
+/*#endregion*/

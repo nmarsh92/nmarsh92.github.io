@@ -1,40 +1,35 @@
 <html>
   <head>
     <title>Resume | Nathan Marsh</title>
-    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
     <div class="container">
-      <section class="pane left-pane">
-        <div class="profile">
-          <div class="profile-header">
-            <img
-              class="profile-image"
-              src="./images/profile.jpg"
-              alt="profile"
-            />
-            <ul class="profile-social">
-              <li class="profile-social-item github-item">
-                <a href="https://github.com/nmarsh92">
-                  <img
-                    class="github-img"
-                    src="./images/github.png"
-                    alt="github"
-                  />
-                </a>
-              </li>
-              <li class="profile-social-item">
-                <a href="https://www.linkedin.com/in/nathan-marsh-92206297/">
-                  <img
-                    class="linkedin-img"
-                    src="./images/linkedin.png"
-                    alt="linkedin"
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
-
+      <div class="section profile">
+        <div class="profile-header">
+          <img class="profile-image" src="./assets/profile.jpg" alt="profile" />
+          <ul class="profile-social">
+            <li class="profile-social-item github-item">
+              <a href="https://github.com/nmarsh92">
+                <img
+                  class="github-img"
+                  src="./assets/github.png"
+                  alt="github"
+                />
+              </a>
+            </li>
+            <li class="profile-social-item">
+              <a href="https://www.linkedin.com/in/nathan-marsh-92206297/">
+                <img
+                  class="linkedin-img"
+                  src="./assets/linkedin.png"
+                  alt="linkedin"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="profile-content">
           <ul class="profile-info">
             <li class="profile-name">Nathan Marsh</li>
             <li class="profile-title">Sr. Software Engineer</li>
@@ -43,14 +38,113 @@
             <li class="profile-location">Charlotte, NC</li>
           </ul>
         </div>
-      </section>
-      <section class="pane right-pane">
-        <div class="skills"></div>
-        <div class="languages"></div>
-        <div class="experience"></div>
-        <div class="education"></div>
-        <div class="projects"></div>
-      </section>
+      </div>
+      <div class="section content">
+        <div class="column skills">
+          <div class="header">
+            <h3 class="skills-header-title">Skills</h3>
+          </div>
+          <div class="content-content">
+            <ul class="skills-list">
+              <li class="skills-list-item">Full Stack Development</li>
+              <li class="skills-list-item">Front End Development</li>
+              <li class="skills-list-item">Back End Development</li>
+              <li class="skills-list-item">System Design</li>
+              <li class="skills-list-item">Architecture</li>
+              <li class="skills-list-item">Team Leadership</li>
+              <li class="skills-list-item">Agile Methodologies</li>
+              <li class="skills-list-item">Scrum</li>
+            </ul>
+          </div>
+        </div>
+        <div class="column languages">
+          <div class="header">
+            <h3 class="languages-title">Languages & Frameworks</h3>
+          </div>
+          <div class="content-content">
+            <ul class="languages-list">
+              <li class="languages-list-item">JavaScript</li>
+              <li class="languages-list-item">TypeScript</li>
+              <li class="languages-list-item">C#</li>
+              <li class="languages-list-item">SQL</li>
+              <li class="languages-list-item">NoSql</li>
+              <li class="languages-list-item">Vue</li>
+            </ul>
+          </div>
+        </div>
+        <div class="column experience">
+          <div class="header">
+            <h3 class="experience-title">Experience</h3>
+          </div>
+          <div class="experience-content">
+            <p class="experience-description">
+              I am a full stack software engineer with 8+ years of experience
+              building web applications. I have a passion for building
+              applications that are scalable, maintainable, and user friendly.
+              I'm a team player and enjoy working with others to solve complex
+              problems.
+            </p>
+            <p class="experience-description">
+              I have experience working with a variety of technologies and
+              languages. I have worked with both relational and non-relational
+              databases. I have experience with both front end and back end
+              development. I have worked with both monolithic and microservice
+              architectures. I have experience with both agile and waterfall
+              methodologies.
+            </p>
+            <p class="experience-description">
+              For a more detailed description of my experience, please see my
+              <a href="./assets/Resume-Nathan-Marsh.pdf" target="_blank"
+                >resume</a
+              >.
+            </p>
+          </div>
+        </div>
+        <div class="column education">
+          <div class="header">
+            <h3 class="education-header-title">Education</h3>
+          </div>
+
+          <div class="content-content education-list">
+            <div class="education-list-item">
+              <h4 class="education-list-item-title">Mars Hill University</h4>
+              <p class="education-list-item-subtitle">B.S. Computer Science</p>
+              <sub class="education-list-item-subtitle">2013 - 2014</sub>
+            </div>
+            <div class="education-list-item">
+              <h4 class="education-list-item-title">
+                McDowell Technical Community College
+              </h4>
+              <sub class="education-list-item-subtitle">2011 - 2012</sub>
+            </div>
+          </div>
+        </div>
+        <div class="column projects">
+          <h3>Projects</h3>
+          <ul class="projects-list">
+            <li class="projects-list-item">
+              <a
+                href="https://github.com/nmarsh92/google-oauth2-ts"
+                target="_blank"
+                >Google Login</a
+              >
+              <p><sub>A OAuth2 api that supports google login.</sub></p>
+            </li>
+            <li>
+              <a
+                href="https://github.com/nmarsh92/dealcloud-helper-js"
+                target="_blank"
+                >DealCloud SDK</a
+              >
+              <p>
+                <sub
+                  >A JavaScript SDK for interacting with the DealCloud CRM.</sub
+                >
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </body>
 </html>
