@@ -26,6 +26,7 @@ ul {
   background-color: var(--primary-color);
   flex-basis: 100%;
   height: 100%;
+  overflow-y: auto;
 }
 
 .section {
@@ -93,6 +94,7 @@ ul {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .column {
@@ -136,19 +138,19 @@ ul {
 /*#region Desktop*/
 @media (min-width: 992px) {
   body {
-    font-size: larger;
+    font-size: medium;
   }
   .container {
     flex-direction: row;
   }
 
   .profile {
-    flex-basis: 25%;
+    flex-basis: 20%;
     max-width: 476px;
   }
 
   .content {
-    flex-basis: 70%;
+    flex-basis: 80%;
   }
 
   .column {
