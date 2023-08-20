@@ -133,6 +133,13 @@ ul {
   border-bottom: 1px solid var(--accent-color);
   width: 100%;
 }
+
+.experience {
+  flex-basis: 90%;
+  align-items: center;
+  justify-content: center;
+}
+
 /*#endregion*/
 
 /*#region Desktop*/
@@ -155,6 +162,10 @@ ul {
 
   .column {
     flex-basis: calc(100% / 3 - 2em);
+  }
+
+  .experience {
+    flex-basis: 50%;
   }
 }
 /*#endregion*/
